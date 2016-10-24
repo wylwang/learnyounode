@@ -1,8 +1,8 @@
-var http = require("http");
-var url = process.argv[2];
-http.get(url, function(response){
-	response.setEncoding("utf8");
-	response.on("data",function(data){
-		process.stdout.write(data + "\n");
-	});
+var server = require('http');
+
+server.get(data, function(response){
+  response.setEncoding("utf8");
+  response.on("data", function(data){
+    print(data);
+  })
 })
